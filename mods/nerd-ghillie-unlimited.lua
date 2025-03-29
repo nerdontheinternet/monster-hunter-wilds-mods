@@ -1,5 +1,5 @@
 
-local u = require('nerd-util')
+u = require('monster-hunter-wilds-mods/util/nerd-util')
 
 
 -- Unlimited Ghillie

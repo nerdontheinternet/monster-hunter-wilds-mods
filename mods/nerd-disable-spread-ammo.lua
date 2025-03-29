@@ -1,8 +1,5 @@
-
-
 local variousDataManager = sdk.get_managed_singleton("app.VariousDataManager")
-local u = require('nerd-util')
-
+u = require('monster-hunter-wilds-mods/util/nerd-util')
 
 -- LBG ammo mod
 local lbgData = variousDataManager._Setting._EquipDatas._WeaponLightBowgun._Values
@@ -17,4 +14,3 @@ for _, entry in pairs(lbgData) do
         entry._IsRappid[2] = false
     end
 end
-

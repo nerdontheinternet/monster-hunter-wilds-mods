@@ -1,4 +1,4 @@
-local u = require('nerd-util')
+u = require('monster-hunter-wilds-mods/util/nerd-util')
 
 local variousDataManager = sdk.get_managed_singleton("app.VariousDataManager")
 
