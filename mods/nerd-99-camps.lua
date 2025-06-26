@@ -1,7 +1,4 @@
 -- app.user_data.CampManagerSetting.cCampMaxNum.getMaxNum(app.FieldDef.STAGE)
-
-
-
 local function getCampMaxNum(retval)
     -- we get 3 extra camps at the end of the story.
     -- so we max out at 99.

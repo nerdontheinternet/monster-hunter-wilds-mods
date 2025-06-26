@@ -24,3 +24,15 @@ for _, entry in pairs(itemData) do
     entry._OtomoMax = 999
   end
 end
+
+-- item pouch
+-- doesn't work 
+-- app.ItemPouchUtil getPouchSize(app.ItemUtil.POUCH_TYPE)
+local function getPouchSizePost(retval)
+  -- multiply pouch sizes
+  log.debug('getPouchSizePost '+retval)
+  return sdk.to_ptr(retval * 3)
+end
+
+sdk.hook(sdk.find_type_definition("app.ItemPouchUtil"):get_method("getPouchSize"), nil, getPouchSizePost)
+
